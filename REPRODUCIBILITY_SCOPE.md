@@ -1,4 +1,4 @@
-# What this candidate supports
+# What this package supports
 
 | Goal | Current support | Remaining dependency |
 | --- | --- | --- |
@@ -10,4 +10,4 @@
 
 The public dataset should include generated masks, artifact identities and checksums, per-question outcome metrics without benchmark text, paired timing observations, configuration summaries, uncertainty estimates, and cost tables. These are scientific outputs and should be deposited with the code after licensing and disclosure review. Uploading code alone would be insufficient for this paper.
 
-The private audited evidence bundles retain full operational receipts, raw source paths, and native artifacts. They are not interchangeable with the curated public data and are not automatically fit for publication. If exact end-to-end rerunning is claimed, the missing inputs and runnable environment must first be packaged and verified. The present candidate supports **independent recomputation of the main and historical statistical families and reported figures**; model selection, checkpoint construction, and inference from upstream inputs require further setup.
+The private audited evidence bundles retain full operational receipts, raw source paths, and native artifacts. They are not interchangeable with the curated public data and are not automatically fit for publication. If exact end-to-end rerunning is claimed, the missing inputs and runnable environment must first be packaged and verified. The public package supports **independent recomputation of the main and historical statistical families and reported figures**; model selection, checkpoint construction, and inference from upstream inputs require further setup.

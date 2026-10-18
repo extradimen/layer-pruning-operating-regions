@@ -1,4 +1,4 @@
-# Source and license review for the release candidate
+# Source and license review
 
 The package contains project-authored Python snapshots and derived metrics, masks, timings, summary tables and figures. It excludes upstream model weights, benchmark prompts, answer labels, generated model text and native checkpoints. This review records upstream attribution; it does not grant redistribution rights to project-authored code or certify rights for derived sample-level data.
 
