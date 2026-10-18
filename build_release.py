@@ -267,7 +267,7 @@ def main() -> None:
         writer = csv.writer(stream)
         writer.writerow(["project_relative_source", "release_relative_file", "source_sha256_and_transform"])
         writer.writerows(SOURCES)
-    files = sorted(p for p in OUT.rglob("*") if p.is_file() and p.name not in {"MANIFEST.sha256", "SOURCE_MAP.csv", "build_release.py"} and ".git" not in p.parts and "__pycache__" not in p.parts and "rebuilt_figures" not in p.parts and p.suffix != ".pyc")
+    files = sorted(p for p in OUT.rglob("*") if p.is_file() and p.name not in {"MANIFEST.sha256", "SOURCE_MAP.csv", "build_release.py"} and ".git" not in p.parts and ".venv" not in p.parts and "__pycache__" not in p.parts and "rebuilt_figures" not in p.parts and p.suffix != ".pyc")
     (OUT / "MANIFEST.sha256").write_text("".join(f"{digest(p)}  {p.relative_to(OUT)}\n" for p in files))
     print(f"source files={len(SOURCES)} release files={len(files)} logical endpoints={len(logical_rows)} question rows={len(quality_rows)} serving trials={len(paired_rows)}")
 

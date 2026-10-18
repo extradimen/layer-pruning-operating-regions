@@ -20,6 +20,8 @@ The per-question table intentionally gives correctness or C4 NLL and limited tel
 
 The released-data checks were validated on Python 3.12.2 with the versions in `requirements-analysis.txt`. These two dependencies describe the **analysis and figures only**; the model-inference runtime is a separate, larger environment and is not represented by this small file.
 
+For installation and first-run commands, start with [QUICKSTART.md](QUICKSTART.md). This is a local analysis package: it needs a Python environment to recompute results, but no server deployment or GPU. Rebuilding the original model experiments has additional requirements described below.
+
 The exact limits of statistical recomputation and end-to-end model reruns are stated in `REPRODUCIBILITY_SCOPE.md`. In particular, this package is **not** sufficient for an independent one-command rerun of all experiments.
 
 No `k=5` result exists in this primary matrix. Historical `k=6/9` and branch-pruning results cited by the manuscript are supplied separately in `07_boundary`; they are not pooled into the paper's main 0–4 whole-layer mechanism comparison. Their released quality and length-diagnostic rows exclude prompts, labels, and generations. The full forensic receipts and native artifact archives remain in the private project evidence bundle.
