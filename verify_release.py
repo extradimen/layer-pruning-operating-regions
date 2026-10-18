@@ -25,7 +25,7 @@ def main() -> None:
     lines = (HERE / "MANIFEST.sha256").read_text().splitlines()
     listed = {line.split("  ", 1)[1] for line in lines}
     actual_files = {str(p.relative_to(HERE)) for p in HERE.rglob("*") if p.is_file()
-                    and "__pycache__" not in p.parts and "rebuilt_figures" not in p.parts and p.suffix != ".pyc"
+                    and ".git" not in p.parts and "__pycache__" not in p.parts and "rebuilt_figures" not in p.parts and p.suffix != ".pyc"
                     and p.name not in {"MANIFEST.sha256", "SOURCE_MAP.csv", "build_release.py"}}
     assert listed == actual_files, (sorted(listed - actual_files), sorted(actual_files - listed))
     for line in lines:
