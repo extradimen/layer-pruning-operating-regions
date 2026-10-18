@@ -1,0 +1,2296 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "currency": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dependencies": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "end_monotonic_ns": {
+      "type": "integer"
+    },
+    "end_utc": {
+      "type": "string"
+    },
+    "energy_counter_start_end": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "event_id": {
+      "type": "string"
+    },
+    "gpu_uuids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "identity": {
+      "type": "object"
+    },
+    "ledger": {
+      "enum": [
+        "setup",
+        "postready",
+        "lease"
+      ]
+    },
+    "measurement_boundary_notes": {
+      "type": "string"
+    },
+    "metrics": {
+      "additionalProperties": false,
+      "properties": {
+        "backward_calls": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "cpu_core_s": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "cpu_energy_j": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "cpu_system_s": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "cpu_user_s": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "estimated_flops": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "export_bytes": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "forward_calls": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "gpu_cuda_event_s": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "gpu_energy_j": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "gpu_kernel_active_s": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "gpu_lease_s": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "gpu_memory_byte_s": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "host_memory_byte_s": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "input_tokens": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "loss_tokens": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "money_amount": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "network_rx_bytes": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "network_tx_bytes": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "node_energy_j": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "output_tokens": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "pair_queries": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "peak_cpu_rss_bytes": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "peak_gpu_allocated_bytes": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "peak_gpu_device_bytes": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "peak_gpu_reserved_bytes": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "read_bytes": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "solver_evaluations": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "temporary_disk_peak_bytes": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "wall_s": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        },
+        "write_bytes": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage_fraction": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "estimate_method": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "instrument": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "sample_interval_s": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "status": {
+              "enum": [
+                "measured",
+                "estimated",
+                "unavailable"
+              ]
+            },
+            "uncertainty": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "minimum": 0,
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "status",
+            "instrument",
+            "null_reason"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "wall_s",
+        "gpu_lease_s",
+        "gpu_cuda_event_s",
+        "gpu_kernel_active_s",
+        "cpu_user_s",
+        "cpu_system_s",
+        "cpu_core_s",
+        "peak_cpu_rss_bytes",
+        "peak_gpu_allocated_bytes",
+        "peak_gpu_reserved_bytes",
+        "peak_gpu_device_bytes",
+        "gpu_memory_byte_s",
+        "host_memory_byte_s",
+        "read_bytes",
+        "write_bytes",
+        "network_rx_bytes",
+        "network_tx_bytes",
+        "export_bytes",
+        "temporary_disk_peak_bytes",
+        "gpu_energy_j",
+        "cpu_energy_j",
+        "node_energy_j",
+        "money_amount",
+        "forward_calls",
+        "backward_calls",
+        "input_tokens",
+        "output_tokens",
+        "loss_tokens",
+        "pair_queries",
+        "solver_evaluations",
+        "estimated_flops"
+      ],
+      "type": "object"
+    },
+    "model_ready_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "phase": {
+      "enum": [
+        "setup",
+        "base_load",
+        "readiness_selfcheck",
+        "dense_capability",
+        "calibration",
+        "prior",
+        "pair_queries",
+        "solver",
+        "selection",
+        "recovery",
+        "export_hash",
+        "reload",
+        "swap_warmup",
+        "dev_quality",
+        "final_quality",
+        "serving",
+        "statistics",
+        "checkpoint",
+        "backup",
+        "wait",
+        "failure",
+        "cleanup"
+      ]
+    },
+    "point_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pricing_source": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "scope": {
+      "enum": [
+        "method_production",
+        "research_evaluation",
+        "common",
+        "physical_occupancy"
+      ]
+    },
+    "shared_consumers": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "start_monotonic_ns": {
+      "type": "integer"
+    },
+    "start_utc": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "failed",
+        "interrupted"
+      ]
+    },
+    "work_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "work_id",
+    "event_id",
+    "run_id",
+    "point_id",
+    "model_ready_id",
+    "ledger",
+    "phase",
+    "scope",
+    "start_monotonic_ns",
+    "end_monotonic_ns",
+    "start_utc",
+    "end_utc",
+    "gpu_uuids",
+    "dependencies",
+    "shared_consumers",
+    "status",
+    "metrics"
+  ],
+  "type": "object"
+}

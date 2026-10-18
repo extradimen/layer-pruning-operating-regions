@@ -1,0 +1,117 @@
+{
+  "protocol_version": "selection-supplement-phase-B-v1",
+  "status": "SCIENTIFIC_DESIGN_FROZEN_OPERATIONAL_ADMISSION_PENDING",
+  "node": "campus-node-6",
+  "models": {
+    "Qwen2.5-7B-Instruct": {
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "layers": 28,
+      "protected": [
+        0,
+        27
+      ]
+    },
+    "Mistral-7B-Instruct-v0.3": {
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "layers": 32,
+      "protected": [
+        0,
+        31
+      ]
+    }
+  },
+  "seeds": [
+    11,
+    23,
+    37
+  ],
+  "methods": [
+    "interaction_tabu",
+    "shortgpt_bi_adapted",
+    "sleb_iterative_adapted",
+    "random"
+  ],
+  "k_new": [
+    1,
+    2,
+    4
+  ],
+  "k_reused": [
+    0,
+    3
+  ],
+  "new_logical_compressed_upper": 72,
+  "shared_dense": 2,
+  "start_rule": {
+    "k1": "8 contiguous depth strata; restart r selects one from stratum r",
+    "k2_k4": "k contiguous depth strata; one each per restart",
+    "rank": "SHA256 phaseB-start-v1|revision|seed|k|restart|partition|layer, lexical byte order",
+    "duplicates": "allowed; no forced diversity",
+    "final_partition_quota": false
+  },
+  "tabu": {
+    "q": 0,
+    "R": 0,
+    "starts": 8,
+    "evaluations_per_start": 12500,
+    "total_evaluations": 100000,
+    "tenure": 5
+  },
+  "phase_B_primary_family": {
+    "contrasts": 96,
+    "models": 2,
+    "methods": 4,
+    "k": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "tasks": [
+      "piqa",
+      "hellaswag",
+      "gsm8k"
+    ],
+    "comparator": "within-model shared Dense k0",
+    "seed_aggregation": "fixed three-seed mean per question",
+    "cluster": "question",
+    "bootstrap_replicates": 50000,
+    "signflip_replicates": 50000,
+    "seed": 20261027,
+    "Holm_alpha": 0.05,
+    "old_family_unchanged": true,
+    "not_joint_FWER_with_phase_A": true
+  },
+  "performance": {
+    "workloads": [
+      "B1S512T128",
+      "B4S2048T128"
+    ],
+    "paired_warmup": 5,
+    "paired_timed": 20,
+    "fixed_GPU_UUID": true,
+    "isolate_from_parallel_CPU_disk_jobs": true
+  },
+  "data": {
+    "E1_tasks": {
+      "piqa": 128,
+      "hellaswag": 128,
+      "gsm8k": 32,
+      "c4": 64
+    },
+    "E1_observed_followup": true,
+    "official_test": false
+  },
+  "budget": {
+    "total_GPUh_ceiling": 144,
+    "last_settled_GPUh_at_freeze": 47.24755755027777,
+    "stage_caps_pending_engineering_pilot": true
+  },
+  "scope": {
+    "k5_included": false,
+    "new_k6_k9": false,
+    "other_granularities": false,
+    "recovery_training": false,
+    "method_screening": false
+  }
+}

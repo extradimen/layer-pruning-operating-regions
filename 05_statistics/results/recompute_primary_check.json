@@ -1,0 +1,12 @@
+{
+  "status": "PASS_RELEASED_ROWS_MATCH_FROZEN_PRIMARY",
+  "checks": {
+    "A_contrasts": 180,
+    "B_contrasts": 1152,
+    "B_serving": 896
+  },
+  "A_contrasts": 18,
+  "B_contrasts": 96,
+  "physical_serving_artifacts": 64,
+  "question_cluster_unit": "sample_id"
+}

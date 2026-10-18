@@ -1,0 +1,74 @@
+{
+  "protocol_version": "selection-supplement-v1",
+  "status": "PHASE_A_SCIENTIFIC_DESIGN_FROZEN_OPERATIONAL_ADMISSION_PENDING",
+  "latest_user_change": "Complete k=3 comparison first; then compare k=0,1,2,4; defer k=6,9",
+  "models": {
+    "Qwen2.5-7B-Instruct": {
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "layers": 28,
+      "protected": [
+        0,
+        27
+      ]
+    },
+    "Mistral-7B-Instruct-v0.3": {
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "layers": 32,
+      "protected": [
+        0,
+        31
+      ]
+    }
+  },
+  "seeds": [
+    11,
+    23,
+    37
+  ],
+  "methods": [
+    "interaction_tabu",
+    "shortgpt_bi_adapted",
+    "sleb_iterative_adapted",
+    "random"
+  ],
+  "phase_A": {
+    "k": [
+      3
+    ],
+    "compressed_logical": 24,
+    "shared_dense": 2,
+    "new_baseline_logical_upper_bound": 18,
+    "existing_tabu_reuse_audit_pending": 6
+  },
+  "phase_B": {
+    "status": "SCOPE_AND_ORDER_FIXED_IMPLEMENTATION_NOT_YET_FROZEN",
+    "k": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "same_four_methods_for_positive_k": true,
+    "no_method_elimination_after_phase_A": true,
+    "required_before_launch": "Define valid tabu starts for k=1,2,4; old k/3 start rule is invalid; freeze implementation, cost caps and analysis before any phase B computation"
+  },
+  "deferred_k": [
+    6,
+    9
+  ],
+  "recovery_training": false,
+  "node": "campus-node-6",
+  "total_GPUh_ceiling": 144,
+  "last_completed_ledger_GPUh": 40.24674049388888,
+  "execution_started": false,
+  "phase_A_statistics": {
+    "family": "2 models x 3 baseline contrasts x 3 accuracy tasks",
+    "Holm_tests": 18,
+    "alpha": 0.05,
+    "resamples": 50000,
+    "seed": 20261026,
+    "unit": "question cluster after fixed three-seed averaging",
+    "CI": "nominal paired percentile 95%, not simultaneous",
+    "status": "follow-up on previously observed E1, not a fresh blind confirmation"
+  }
+}

@@ -1,0 +1,3957 @@
+{
+  "status": "PASS_FROZEN_STAGE_I_COMMON_POOL_STATISTICS",
+  "validation": {
+    "quality_records": 4224,
+    "physical_models": 12,
+    "compressed_logical": 12,
+    "shared_IDs_exact": true
+  },
+  "quality": {
+    "piqa": {
+      "n": 128,
+      "dense_accuracy": 0.8125,
+      "arms": {
+        "k3": {
+          "accuracy": 0.8072916666666666,
+          "nominal95CI": [
+            0.7447916666666666,
+            0.8645833333333334
+          ]
+        },
+        "k6": {
+          "accuracy": 0.7552083333333334,
+          "nominal95CI": [
+            0.6901041666666666,
+            0.8177083333333333
+          ]
+        },
+        "k9": {
+          "accuracy": 0.7109375,
+          "nominal95CI": [
+            0.640625,
+            0.7786458333333333
+          ]
+        },
+        "branch": {
+          "accuracy": 0.7213541666666666,
+          "nominal95CI": [
+            0.6536458333333333,
+            0.7864583333333333
+          ]
+        }
+      }
+    },
+    "hellaswag": {
+      "n": 128,
+      "dense_accuracy": 0.7890625,
+      "arms": {
+        "k3": {
+          "accuracy": 0.7135416666666666,
+          "nominal95CI": [
+            0.640625,
+            0.7838541666666666
+          ]
+        },
+        "k6": {
+          "accuracy": 0.5859375,
+          "nominal95CI": [
+            0.5052083333333334,
+            0.6640625
+          ]
+        },
+        "k9": {
+          "accuracy": 0.4557291666666667,
+          "nominal95CI": [
+            0.37760416666666663,
+            0.5364583333333333
+          ]
+        },
+        "branch": {
+          "accuracy": 0.4765625,
+          "nominal95CI": [
+            0.40364583333333326,
+            0.5520833333333333
+          ]
+        }
+      }
+    },
+    "gsm8k": {
+      "n": 32,
+      "dense_accuracy": 0.96875,
+      "arms": {
+        "k3": {
+          "accuracy": 0.07291666666666667,
+          "nominal95CI": [
+            0.03125,
+            0.12499999999999999
+          ]
+        },
+        "k6": {
+          "accuracy": 0.0,
+          "nominal95CI": [
+            0.0,
+            0.0
+          ]
+        },
+        "k9": {
+          "accuracy": 0.0,
+          "nominal95CI": [
+            0.0,
+            0.0
+          ]
+        },
+        "branch": {
+          "accuracy": 0.0,
+          "nominal95CI": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "per_seed_quality": [
+    {
+      "arm": "k3",
+      "seed": 11,
+      "task": "piqa",
+      "artifact": "2599d04ba71b6290566075a404a7e647b3ad24cc0f2fc660bbe7d6f0e80b3b30",
+      "accuracy": 0.828125,
+      "correct": 106,
+      "n": 128
+    },
+    {
+      "arm": "k3",
+      "seed": 23,
+      "task": "piqa",
+      "artifact": "26f5651730f582bf870d3febc86d61c235b6d0551465a497fb355264f3835fcb",
+      "accuracy": 0.7890625,
+      "correct": 101,
+      "n": 128
+    },
+    {
+      "arm": "k3",
+      "seed": 37,
+      "task": "piqa",
+      "artifact": "fca8e3e34ff7940fff192c455f6a593aab7e80e3c0ca09bdf0bcde9858b2a0a7",
+      "accuracy": 0.8046875,
+      "correct": 103,
+      "n": 128
+    },
+    {
+      "arm": "k6",
+      "seed": 11,
+      "task": "piqa",
+      "artifact": "b828eb5a3aede94d43b9fa1983f2f51c48f7219558fefa81309bb6553144f008",
+      "accuracy": 0.8046875,
+      "correct": 103,
+      "n": 128
+    },
+    {
+      "arm": "k6",
+      "seed": 23,
+      "task": "piqa",
+      "artifact": "08f29d3adf0685c1eb57e1923514342efdf9b49a2ad5238ab7f85f2f53caf79c",
+      "accuracy": 0.65625,
+      "correct": 84,
+      "n": 128
+    },
+    {
+      "arm": "k6",
+      "seed": 37,
+      "task": "piqa",
+      "artifact": "b828eb5a3aede94d43b9fa1983f2f51c48f7219558fefa81309bb6553144f008",
+      "accuracy": 0.8046875,
+      "correct": 103,
+      "n": 128
+    },
+    {
+      "arm": "k9",
+      "seed": 11,
+      "task": "piqa",
+      "artifact": "62bb5a891253c9049fc770b4926f5ad3500e739676f222b501ad9c3ffc6d4b34",
+      "accuracy": 0.7421875,
+      "correct": 95,
+      "n": 128
+    },
+    {
+      "arm": "k9",
+      "seed": 23,
+      "task": "piqa",
+      "artifact": "4f0f221d4a3ce43dbbdb80cf3d714bf8bf931f5b78451384ff46d340fcaeb0e5",
+      "accuracy": 0.671875,
+      "correct": 86,
+      "n": 128
+    },
+    {
+      "arm": "k9",
+      "seed": 37,
+      "task": "piqa",
+      "artifact": "b487b06b242752c5d539b6d51219ac7de087f7c2348208ad3aaf81b5ca17054c",
+      "accuracy": 0.71875,
+      "correct": 92,
+      "n": 128
+    },
+    {
+      "arm": "branch",
+      "seed": 11,
+      "task": "piqa",
+      "artifact": "30d49d768ed448a39ad25aa70df5868230a36ca0d4dea79d70ddd26dc704b6e3",
+      "accuracy": 0.65625,
+      "correct": 84,
+      "n": 128
+    },
+    {
+      "arm": "branch",
+      "seed": 23,
+      "task": "piqa",
+      "artifact": "fc740272fb3815fe0c5398aab65341102fe8fc7b27d7c22e5c3d1770a0673407",
+      "accuracy": 0.734375,
+      "correct": 94,
+      "n": 128
+    },
+    {
+      "arm": "branch",
+      "seed": 37,
+      "task": "piqa",
+      "artifact": "0b8c7209ee7a5a813cfdf611e585fe7855ffa15b38da31d7cfd6d71657586a7f",
+      "accuracy": 0.7734375,
+      "correct": 99,
+      "n": 128
+    },
+    {
+      "arm": "k3",
+      "seed": 11,
+      "task": "hellaswag",
+      "artifact": "2599d04ba71b6290566075a404a7e647b3ad24cc0f2fc660bbe7d6f0e80b3b30",
+      "accuracy": 0.734375,
+      "correct": 94,
+      "n": 128
+    },
+    {
+      "arm": "k3",
+      "seed": 23,
+      "task": "hellaswag",
+      "artifact": "26f5651730f582bf870d3febc86d61c235b6d0551465a497fb355264f3835fcb",
+      "accuracy": 0.734375,
+      "correct": 94,
+      "n": 128
+    },
+    {
+      "arm": "k3",
+      "seed": 37,
+      "task": "hellaswag",
+      "artifact": "fca8e3e34ff7940fff192c455f6a593aab7e80e3c0ca09bdf0bcde9858b2a0a7",
+      "accuracy": 0.671875,
+      "correct": 86,
+      "n": 128
+    },
+    {
+      "arm": "k6",
+      "seed": 11,
+      "task": "hellaswag",
+      "artifact": "b828eb5a3aede94d43b9fa1983f2f51c48f7219558fefa81309bb6553144f008",
+      "accuracy": 0.609375,
+      "correct": 78,
+      "n": 128
+    },
+    {
+      "arm": "k6",
+      "seed": 23,
+      "task": "hellaswag",
+      "artifact": "08f29d3adf0685c1eb57e1923514342efdf9b49a2ad5238ab7f85f2f53caf79c",
+      "accuracy": 0.5390625,
+      "correct": 69,
+      "n": 128
+    },
+    {
+      "arm": "k6",
+      "seed": 37,
+      "task": "hellaswag",
+      "artifact": "b828eb5a3aede94d43b9fa1983f2f51c48f7219558fefa81309bb6553144f008",
+      "accuracy": 0.609375,
+      "correct": 78,
+      "n": 128
+    },
+    {
+      "arm": "k9",
+      "seed": 11,
+      "task": "hellaswag",
+      "artifact": "62bb5a891253c9049fc770b4926f5ad3500e739676f222b501ad9c3ffc6d4b34",
+      "accuracy": 0.4921875,
+      "correct": 63,
+      "n": 128
+    },
+    {
+      "arm": "k9",
+      "seed": 23,
+      "task": "hellaswag",
+      "artifact": "4f0f221d4a3ce43dbbdb80cf3d714bf8bf931f5b78451384ff46d340fcaeb0e5",
+      "accuracy": 0.4140625,
+      "correct": 53,
+      "n": 128
+    },
+    {
+      "arm": "k9",
+      "seed": 37,
+      "task": "hellaswag",
+      "artifact": "b487b06b242752c5d539b6d51219ac7de087f7c2348208ad3aaf81b5ca17054c",
+      "accuracy": 0.4609375,
+      "correct": 59,
+      "n": 128
+    },
+    {
+      "arm": "branch",
+      "seed": 11,
+      "task": "hellaswag",
+      "artifact": "30d49d768ed448a39ad25aa70df5868230a36ca0d4dea79d70ddd26dc704b6e3",
+      "accuracy": 0.3984375,
+      "correct": 51,
+      "n": 128
+    },
+    {
+      "arm": "branch",
+      "seed": 23,
+      "task": "hellaswag",
+      "artifact": "fc740272fb3815fe0c5398aab65341102fe8fc7b27d7c22e5c3d1770a0673407",
+      "accuracy": 0.4609375,
+      "correct": 59,
+      "n": 128
+    },
+    {
+      "arm": "branch",
+      "seed": 37,
+      "task": "hellaswag",
+      "artifact": "0b8c7209ee7a5a813cfdf611e585fe7855ffa15b38da31d7cfd6d71657586a7f",
+      "accuracy": 0.5703125,
+      "correct": 73,
+      "n": 128
+    },
+    {
+      "arm": "k3",
+      "seed": 11,
+      "task": "gsm8k",
+      "artifact": "2599d04ba71b6290566075a404a7e647b3ad24cc0f2fc660bbe7d6f0e80b3b30",
+      "accuracy": 0.0625,
+      "correct": 2,
+      "n": 32
+    },
+    {
+      "arm": "k3",
+      "seed": 23,
+      "task": "gsm8k",
+      "artifact": "26f5651730f582bf870d3febc86d61c235b6d0551465a497fb355264f3835fcb",
+      "accuracy": 0.0625,
+      "correct": 2,
+      "n": 32
+    },
+    {
+      "arm": "k3",
+      "seed": 37,
+      "task": "gsm8k",
+      "artifact": "fca8e3e34ff7940fff192c455f6a593aab7e80e3c0ca09bdf0bcde9858b2a0a7",
+      "accuracy": 0.09375,
+      "correct": 3,
+      "n": 32
+    },
+    {
+      "arm": "k6",
+      "seed": 11,
+      "task": "gsm8k",
+      "artifact": "b828eb5a3aede94d43b9fa1983f2f51c48f7219558fefa81309bb6553144f008",
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 32
+    },
+    {
+      "arm": "k6",
+      "seed": 23,
+      "task": "gsm8k",
+      "artifact": "08f29d3adf0685c1eb57e1923514342efdf9b49a2ad5238ab7f85f2f53caf79c",
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 32
+    },
+    {
+      "arm": "k6",
+      "seed": 37,
+      "task": "gsm8k",
+      "artifact": "b828eb5a3aede94d43b9fa1983f2f51c48f7219558fefa81309bb6553144f008",
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 32
+    },
+    {
+      "arm": "k9",
+      "seed": 11,
+      "task": "gsm8k",
+      "artifact": "62bb5a891253c9049fc770b4926f5ad3500e739676f222b501ad9c3ffc6d4b34",
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 32
+    },
+    {
+      "arm": "k9",
+      "seed": 23,
+      "task": "gsm8k",
+      "artifact": "4f0f221d4a3ce43dbbdb80cf3d714bf8bf931f5b78451384ff46d340fcaeb0e5",
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 32
+    },
+    {
+      "arm": "k9",
+      "seed": 37,
+      "task": "gsm8k",
+      "artifact": "b487b06b242752c5d539b6d51219ac7de087f7c2348208ad3aaf81b5ca17054c",
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 32
+    },
+    {
+      "arm": "branch",
+      "seed": 11,
+      "task": "gsm8k",
+      "artifact": "30d49d768ed448a39ad25aa70df5868230a36ca0d4dea79d70ddd26dc704b6e3",
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 32
+    },
+    {
+      "arm": "branch",
+      "seed": 23,
+      "task": "gsm8k",
+      "artifact": "fc740272fb3815fe0c5398aab65341102fe8fc7b27d7c22e5c3d1770a0673407",
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 32
+    },
+    {
+      "arm": "branch",
+      "seed": 37,
+      "task": "gsm8k",
+      "artifact": "0b8c7209ee7a5a813cfdf611e585fe7855ffa15b38da31d7cfd6d71657586a7f",
+      "accuracy": 0.0,
+      "correct": 0,
+      "n": 32
+    }
+  ],
+  "contrasts": [
+    {
+      "task": "piqa",
+      "direction": "k6-k3",
+      "family_slot": 0,
+      "accuracy_difference": -0.052083333333333336,
+      "nominal95CI": [
+        -0.09375,
+        -0.01041666666666667
+      ],
+      "p_two_sided": 0.01893962120757585,
+      "question_clusters": 128,
+      "p_Holm9": 0.09527809443811122,
+      "reject_Holm9": false
+    },
+    {
+      "task": "piqa",
+      "direction": "k9-k6",
+      "family_slot": 3,
+      "accuracy_difference": -0.04427083333333333,
+      "nominal95CI": [
+        -0.08333333333333334,
+        -0.005208333333333334
+      ],
+      "p_two_sided": 0.0372992540149197,
+      "question_clusters": 128,
+      "p_Holm9": 0.1491970160596788,
+      "reject_Holm9": false
+    },
+    {
+      "task": "piqa",
+      "direction": "branch-k6block",
+      "family_slot": 6,
+      "accuracy_difference": -0.03385416666666667,
+      "nominal95CI": [
+        -0.08072916666666666,
+        0.010416666666666668
+      ],
+      "p_two_sided": 0.17953640927181455,
+      "question_clusters": 128,
+      "p_Holm9": 0.5386092278154436,
+      "reject_Holm9": false
+    },
+    {
+      "task": "hellaswag",
+      "direction": "k6-k3",
+      "family_slot": 1,
+      "accuracy_difference": -0.12760416666666669,
+      "nominal95CI": [
+        -0.18489583333333331,
+        -0.07552083333333333
+      ],
+      "p_two_sided": 1.999960000799984e-05,
+      "question_clusters": 128,
+      "p_Holm9": 0.00017999640007199856,
+      "reject_Holm9": true
+    },
+    {
+      "task": "hellaswag",
+      "direction": "k9-k6",
+      "family_slot": 4,
+      "accuracy_difference": -0.13020833333333334,
+      "nominal95CI": [
+        -0.18229166666666669,
+        -0.08072916666666666
+      ],
+      "p_two_sided": 1.999960000799984e-05,
+      "question_clusters": 128,
+      "p_Holm9": 0.00017999640007199856,
+      "reject_Holm9": true
+    },
+    {
+      "task": "hellaswag",
+      "direction": "branch-k6block",
+      "family_slot": 7,
+      "accuracy_difference": -0.109375,
+      "nominal95CI": [
+        -0.1640625,
+        -0.054687500000000014
+      ],
+      "p_two_sided": 0.0001399972000559989,
+      "question_clusters": 128,
+      "p_Holm9": 0.0009799804003919922,
+      "reject_Holm9": true
+    },
+    {
+      "task": "gsm8k",
+      "direction": "k6-k3",
+      "family_slot": 2,
+      "accuracy_difference": -0.07291666666666666,
+      "nominal95CI": [
+        -0.12499999999999999,
+        -0.03125
+      ],
+      "p_two_sided": 0.01587968240635187,
+      "question_clusters": 32,
+      "p_Holm9": 0.09527809443811122,
+      "reject_Holm9": false
+    },
+    {
+      "task": "gsm8k",
+      "direction": "k9-k6",
+      "family_slot": 5,
+      "accuracy_difference": 0.0,
+      "nominal95CI": [
+        0.0,
+        0.0
+      ],
+      "p_two_sided": 1.0,
+      "question_clusters": 32,
+      "p_Holm9": 1.0,
+      "reject_Holm9": false
+    },
+    {
+      "task": "gsm8k",
+      "direction": "branch-k6block",
+      "family_slot": 8,
+      "accuracy_difference": 0.0,
+      "nominal95CI": [
+        0.0,
+        0.0
+      ],
+      "p_two_sided": 1.0,
+      "question_clusters": 32,
+      "p_Holm9": 1.0,
+      "reject_Holm9": false
+    }
+  ],
+  "pool": {
+    "08f29d3adf0685c1eb57e1923514342efdf9b49a2ad5238ab7f85f2f53caf79c": {
+      "bundle_bytes": 12446101099,
+      "C4_mean_NLL": 3.2086766125404673,
+      "C4_signed_delta_mean": 0.7494379648257141,
+      "C4_positive_delta_mean": 0.7494379648257141,
+      "C4_positive_delta_CVaR90": 1.2313759238286026,
+      "C4_paired_document_delta": [
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230004",
+          "delta": 0.6222549707222358
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230006",
+          "delta": 0.7747198354941291
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230008",
+          "delta": 0.5642197342068251
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230015",
+          "delta": 0.6624452475232387
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230022",
+          "delta": 0.4615514348397749
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230026",
+          "delta": 0.8598533675162059
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230028",
+          "delta": 0.691881153681507
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230032",
+          "delta": 0.4976945194012963
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230036",
+          "delta": 0.7935251135182244
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230045",
+          "delta": 0.7660454378669277
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230050",
+          "delta": 0.6507558803968934
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230064",
+          "delta": 0.6438876934014188
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230065",
+          "delta": 0.8329593188142126
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230074",
+          "delta": 0.9674712477831457
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230091",
+          "delta": 1.6330575961656066
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230092",
+          "delta": 0.6087137659001955
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230124",
+          "delta": 0.7058540239726026
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230136",
+          "delta": 0.6004399786723336
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230140",
+          "delta": 0.8063742680558952
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230145",
+          "delta": 0.9290405990092954
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230153",
+          "delta": 0.5858130408359834
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230163",
+          "delta": 0.7908445832314088
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230164",
+          "delta": 0.7226767941230432
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230165",
+          "delta": 0.5247513683341491
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230184",
+          "delta": 0.6573849433555528
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230205",
+          "delta": 1.8166011802837572
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230220",
+          "delta": 1.048570606806507
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230227",
+          "delta": 0.7511241935237281
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230233",
+          "delta": 0.6961798919856896
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230240",
+          "delta": 0.882544470859834
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230249",
+          "delta": 0.5280965965554674
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230258",
+          "delta": 0.5784479727250487
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230260",
+          "delta": 0.9234299034521771
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230261",
+          "delta": 0.6408808459974313
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230267",
+          "delta": 0.6929188707803324
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230269",
+          "delta": 0.8395322437622306
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230274",
+          "delta": 0.6833730201198631
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230303",
+          "delta": 0.6187686808188602
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230307",
+          "delta": 0.5155828367707314
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230308",
+          "delta": 0.7346560483809321
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230317",
+          "delta": 0.6720756635273974
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230322",
+          "delta": 1.0055411799779845
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230340",
+          "delta": 0.6086862941077547
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230343",
+          "delta": 0.9072466288527399
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230362",
+          "delta": 0.7276917101119129
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230372",
+          "delta": 0.6946870986729454
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230378",
+          "delta": 0.584079570732938
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230382",
+          "delta": 0.5460541906188845
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230387",
+          "delta": 0.9383263037396037
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230400",
+          "delta": 0.3479892559014188
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230424",
+          "delta": 0.7374731015319225
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230427",
+          "delta": 0.9970942010151664
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230446",
+          "delta": 0.7738436047578277
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230449",
+          "delta": 0.5830500951718443
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230457",
+          "delta": 0.5809297505656801
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230462",
+          "delta": 0.7229548564395794
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230468",
+          "delta": 0.7823400329470398
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230481",
+          "delta": 0.8381987868456457
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230482",
+          "delta": 0.7085825701749022
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230488",
+          "delta": 0.9929526491407779
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230504",
+          "delta": 0.725142566658513
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230511",
+          "delta": 0.6210901667227251
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230515",
+          "delta": 0.6879918645272753
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230525",
+          "delta": 0.8750843264585373
+        }
+      ],
+      "GSM_truncated": 32,
+      "GSM_parse_failures": 19,
+      "GSM_natural_total_wall_seconds": 443.05849487807427,
+      "GSM_output_tokens": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "logical_consumers": [
+        "StageF-k6-s23"
+      ]
+    },
+    "2599d04ba71b6290566075a404a7e647b3ad24cc0f2fc660bbe7d6f0e80b3b30": {
+      "bundle_bytes": 13844455003,
+      "C4_mean_NLL": 2.7701864373194027,
+      "C4_signed_delta_mean": 0.31094778960464986,
+      "C4_positive_delta_mean": 0.31094778960464986,
+      "C4_positive_delta_CVaR90": 0.5063241335277221,
+      "C4_paired_document_delta": [
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230004",
+          "delta": 0.2865917108763454
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230006",
+          "delta": 0.33738108297150227
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230008",
+          "delta": 0.203712179702789
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230015",
+          "delta": 0.25539235452849773
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230022",
+          "delta": 0.23698697024828785
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230026",
+          "delta": 0.35872559071520294
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230028",
+          "delta": 0.31755648200525943
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230032",
+          "delta": 0.20486217282289587
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230036",
+          "delta": 0.3829207149737037
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230045",
+          "delta": 0.2636424921263454
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230050",
+          "delta": 0.23138965225966235
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230064",
+          "delta": 0.2862493884540118
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230065",
+          "delta": 0.38190354199792065
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230074",
+          "delta": 0.3939779919887476
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230091",
+          "delta": 0.36014134356653615
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230092",
+          "delta": 0.31652617034613506
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230124",
+          "delta": 0.3195590562316535
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230136",
+          "delta": 0.16305129915300887
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230140",
+          "delta": 0.2435833059411694
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230145",
+          "delta": 0.4030463112310423
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230153",
+          "delta": 0.3083230931231653
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230163",
+          "delta": 0.31090711380870806
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230164",
+          "delta": 0.3127579959637963
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230165",
+          "delta": 0.17824582810971146
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230184",
+          "delta": 0.18093161386986312
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230205",
+          "delta": 0.9153245302562377
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230220",
+          "delta": 0.44523462344055753
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230227",
+          "delta": 0.3792134563050391
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230233",
+          "delta": 0.22505943462573397
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230240",
+          "delta": 0.41922241927592996
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230249",
+          "delta": 0.20384918033726773
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230258",
+          "delta": 0.2215053013392856
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230260",
+          "delta": 0.19866453644814097
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230261",
+          "delta": 0.32731422379525466
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230267",
+          "delta": 0.30979414788710846
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230269",
+          "delta": 0.34059552157228445
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230274",
+          "delta": 0.25195408054060664
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230303",
+          "delta": 0.28222035148605684
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230307",
+          "delta": 0.2542938411585738
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230308",
+          "delta": 0.27418007449394577
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230317",
+          "delta": 0.17458037434258822
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230322",
+          "delta": 0.46151392987096385
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230340",
+          "delta": 0.35172780852495134
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230343",
+          "delta": 0.3786320098458904
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230362",
+          "delta": 0.28078130733243656
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230372",
+          "delta": 0.302855728657045
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230378",
+          "delta": 0.26463446271862767
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230382",
+          "delta": 0.2560251612952542
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230387",
+          "delta": 0.42186640013454024
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230400",
+          "delta": 0.09479392811276899
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230424",
+          "delta": 0.36289306162854684
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230427",
+          "delta": 0.35785139050269077
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230446",
+          "delta": 0.41288599062805753
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230449",
+          "delta": 0.25621985269386016
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230457",
+          "delta": 0.2094282236117908
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230462",
+          "delta": 0.41106640242783765
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230468",
+          "delta": 0.32938846356714757
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230481",
+          "delta": 0.3134858790209152
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230482",
+          "delta": 0.3216684121208413
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230488",
+          "delta": 0.37032621200770555
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230504",
+          "delta": 0.3648249258500491
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230511",
+          "delta": 0.23009202811582696
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230515",
+          "delta": 0.2970116423067517
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230525",
+          "delta": 0.38931375940251955
+        }
+      ],
+      "GSM_truncated": 30,
+      "GSM_parse_failures": 0,
+      "GSM_natural_total_wall_seconds": 465.13953428507375,
+      "GSM_output_tokens": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        169,
+        512,
+        512,
+        512,
+        512,
+        512,
+        238,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "logical_consumers": [
+        "StageF-k3-s11"
+      ]
+    },
+    "26f5651730f582bf870d3febc86d61c235b6d0551465a497fb355264f3835fcb": {
+      "bundle_bytes": 13844455003,
+      "C4_mean_NLL": 2.7696426208705116,
+      "C4_signed_delta_mean": 0.31040397315575885,
+      "C4_positive_delta_mean": 0.31040397315575885,
+      "C4_positive_delta_CVaR90": 0.5131193635048464,
+      "C4_paired_document_delta": [
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230004",
+          "delta": 0.26216307638209413
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230006",
+          "delta": 0.3093751433310912
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230008",
+          "delta": 0.23425866293114028
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230015",
+          "delta": 0.2496870604513206
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230022",
+          "delta": 0.19073593826443247
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230026",
+          "delta": 0.3592239051415731
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230028",
+          "delta": 0.3091226417257831
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230032",
+          "delta": 0.21384616560665348
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230036",
+          "delta": 0.3860682657320207
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230045",
+          "delta": 0.3204321814609834
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230050",
+          "delta": 0.2119974334179302
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230064",
+          "delta": 0.2699922983427103
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230065",
+          "delta": 0.36667604689028854
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230074",
+          "delta": 0.38732814602189336
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230091",
+          "delta": 0.3954170361423679
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230092",
+          "delta": 0.30423027381971623
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230124",
+          "delta": 0.28755680688906526
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230136",
+          "delta": 0.18001548931323397
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230140",
+          "delta": 0.23312491400134538
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230145",
+          "delta": 0.4120307817851028
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230153",
+          "delta": 0.32183730392306753
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230163",
+          "delta": 0.3056530737830232
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230164",
+          "delta": 0.3073536971777151
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230165",
+          "delta": 0.2217604306812624
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230184",
+          "delta": 0.20149269775868417
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230205",
+          "delta": 0.8650329948171477
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230220",
+          "delta": 0.4674939418725539
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230227",
+          "delta": 0.35666628126528854
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230233",
+          "delta": 0.26312196138087085
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230240",
+          "delta": 0.43654493716364984
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230249",
+          "delta": 0.2106239632384419
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230258",
+          "delta": 0.17416232532717713
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230260",
+          "delta": 0.1748794585524709
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230261",
+          "delta": 0.3037333927042565
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230267",
+          "delta": 0.2867431640625
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230269",
+          "delta": 0.3732535106561885
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230274",
+          "delta": 0.2848442659919277
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230303",
+          "delta": 0.2607242711136255
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230307",
+          "delta": 0.2094663257934808
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230308",
+          "delta": 0.30163132281219407
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230317",
+          "delta": 0.13947739573140927
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230322",
+          "delta": 0.42843574180528377
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230340",
+          "delta": 0.2742991587420498
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230343",
+          "delta": 0.38237581794275943
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230362",
+          "delta": 0.3441632713123779
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230372",
+          "delta": 0.2792600866866439
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230378",
+          "delta": 0.26869992967221146
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230382",
+          "delta": 0.2862035225048922
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230387",
+          "delta": 0.4665154682913406
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230400",
+          "delta": 0.13785918771404093
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230424",
+          "delta": 0.3475532904996328
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230427",
+          "delta": 0.329877461472603
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230446",
+          "delta": 0.45081378615765644
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230449",
+          "delta": 0.28668272611912915
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230457",
+          "delta": 0.21787281372309186
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230462",
+          "delta": 0.4228176408084634
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230468",
+          "delta": 0.3498004831213306
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230481",
+          "delta": 0.30258244404354206
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230482",
+          "delta": 0.36867862111668304
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230488",
+          "delta": 0.3374661260854941
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230504",
+          "delta": 0.34948873799840996
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230511",
+          "delta": 0.1910543721715996
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230515",
+          "delta": 0.31469822116560664
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230525",
+          "delta": 0.37887638935604206
+        }
+      ],
+      "GSM_truncated": 26,
+      "GSM_parse_failures": 2,
+      "GSM_natural_total_wall_seconds": 436.803411930945,
+      "GSM_output_tokens": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        55,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        455,
+        512,
+        246,
+        109,
+        512,
+        512,
+        129,
+        512,
+        512,
+        110
+      ],
+      "logical_consumers": [
+        "StageF-k3-s23"
+      ]
+    },
+    "4f0f221d4a3ce43dbbdb80cf3d714bf8bf931f5b78451384ff46d340fcaeb0e5": {
+      "bundle_bytes": 11047747195,
+      "C4_mean_NLL": 3.6394582811866956,
+      "C4_signed_delta_mean": 1.1802196334719426,
+      "C4_positive_delta_mean": 1.1802196334719426,
+      "C4_positive_delta_CVaR90": 1.6985163903283047,
+      "C4_paired_document_delta": [
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230004",
+          "delta": 0.9973708300207926
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230006",
+          "delta": 1.0628404113411203
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230008",
+          "delta": 0.9997240876498292
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230015",
+          "delta": 1.0122689025042808
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230022",
+          "delta": 0.7044345684014188
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230026",
+          "delta": 1.2658045221914749
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230028",
+          "delta": 1.166365352862035
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230032",
+          "delta": 0.8582252457650439
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230036",
+          "delta": 1.3424122431506849
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230045",
+          "delta": 1.438285693263821
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230050",
+          "delta": 1.1391121403345155
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230064",
+          "delta": 0.9232132346196185
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230065",
+          "delta": 1.2231825139891144
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230074",
+          "delta": 1.528724028406311
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230091",
+          "delta": 1.8499944578644811
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230092",
+          "delta": 0.9386597874113258
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230124",
+          "delta": 1.0533729150103963
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230136",
+          "delta": 1.0632844988380628
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230140",
+          "delta": 1.1181289463827055
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230145",
+          "delta": 1.4343560325189582
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230153",
+          "delta": 1.0332437354757826
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230163",
+          "delta": 1.315173363732265
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230164",
+          "delta": 1.1800580108702299
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230165",
+          "delta": 0.9078189976761255
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230184",
+          "delta": 1.0187985892398483
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230205",
+          "delta": 2.4192721073874757
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230220",
+          "delta": 1.580623260916096
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230227",
+          "delta": 1.4324824562744616
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230233",
+          "delta": 1.141648861760029
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230240",
+          "delta": 1.3412928273299904
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230249",
+          "delta": 0.8415822366912304
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230258",
+          "delta": 0.9230892532259047
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230260",
+          "delta": 1.310068388041218
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230261",
+          "delta": 1.0275778574486303
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230267",
+          "delta": 0.9727396209179302
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230269",
+          "delta": 1.3955672949027642
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230274",
+          "delta": 1.0896934912396037
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230303",
+          "delta": 0.9018834183127447
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230307",
+          "delta": 0.9515663938279724
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230308",
+          "delta": 1.3565887630335738
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230317",
+          "delta": 1.1231930727128177
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230322",
+          "delta": 1.4691811876987528
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230340",
+          "delta": 1.0189199428968934
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230343",
+          "delta": 1.32912019554183
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230362",
+          "delta": 1.312547299260029
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230372",
+          "delta": 1.1482162923495598
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230378",
+          "delta": 1.0257798883546356
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230382",
+          "delta": 0.9574435657717713
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230387",
+          "delta": 1.4473955785225048
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230400",
+          "delta": 0.6311338540392613
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230424",
+          "delta": 1.091889084668542
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230427",
+          "delta": 1.386679095064824
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230446",
+          "delta": 1.1016905424412915
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230449",
+          "delta": 1.0640477368976273
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230457",
+          "delta": 1.0454612776724557
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230462",
+          "delta": 1.215478706733121
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230468",
+          "delta": 1.2827184270272745
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230481",
+          "delta": 1.238363665377324
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230482",
+          "delta": 1.1741432145150439
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230488",
+          "delta": 1.4370389516572897
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230504",
+          "delta": 1.0703726990582192
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230511",
+          "delta": 1.2948936865521037
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230515",
+          "delta": 1.1206716399370111
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230525",
+          "delta": 1.287147596624266
+        }
+      ],
+      "GSM_truncated": 32,
+      "GSM_parse_failures": 31,
+      "GSM_natural_total_wall_seconds": 393.9831516569975,
+      "GSM_output_tokens": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "logical_consumers": [
+        "StageF-k9-s23"
+      ]
+    },
+    "62bb5a891253c9049fc770b4926f5ad3500e739676f222b501ad9c3ffc6d4b34": {
+      "bundle_bytes": 11047747195,
+      "C4_mean_NLL": 3.333725479484304,
+      "C4_signed_delta_mean": 0.8744868317695513,
+      "C4_positive_delta_mean": 0.8744868317695513,
+      "C4_positive_delta_CVaR90": 1.3597229511537197,
+      "C4_paired_document_delta": [
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230004",
+          "delta": 0.8649892788343934
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230006",
+          "delta": 0.8476304504036203
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230008",
+          "delta": 0.6543104914536451
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230015",
+          "delta": 0.82467406509907
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230022",
+          "delta": 0.5188566383317026
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230026",
+          "delta": 0.9504651332788037
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230028",
+          "delta": 0.8626290935359591
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230032",
+          "delta": 0.7115829676797945
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230036",
+          "delta": 0.9965939755075834
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230045",
+          "delta": 0.9299868230950343
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230050",
+          "delta": 0.7563005958751221
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230064",
+          "delta": 0.8528281135335125
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230065",
+          "delta": 0.9336307771985077
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230074",
+          "delta": 1.171058012781311
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230091",
+          "delta": 1.0698089301002933
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230092",
+          "delta": 0.7825079692086594
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230124",
+          "delta": 0.8785089839927838
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230136",
+          "delta": 0.793768537487769
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230140",
+          "delta": 0.9155156383775687
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230145",
+          "delta": 1.0481408524186644
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230153",
+          "delta": 0.7751259402519568
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230163",
+          "delta": 1.0348750821764918
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230164",
+          "delta": 0.8316578725079502
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230165",
+          "delta": 0.6827411688937137
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230184",
+          "delta": 0.6695176813233856
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230205",
+          "delta": 2.398791527794765
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230220",
+          "delta": 1.2148614275012233
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230227",
+          "delta": 0.7622270976027394
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230233",
+          "delta": 0.8778969602342221
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230240",
+          "delta": 1.1216718520670255
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230249",
+          "delta": 0.5293411881956334
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230258",
+          "delta": 0.6466021453797697
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230260",
+          "delta": 0.6179275661998531
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230261",
+          "delta": 0.8040348657656553
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230267",
+          "delta": 0.8352798491774704
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230269",
+          "delta": 1.0248481168205723
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230274",
+          "delta": 0.840358308616683
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230303",
+          "delta": 0.5866668163680284
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230307",
+          "delta": 0.6736440639906436
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230308",
+          "delta": 1.0194898034261863
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230317",
+          "delta": 0.7310879403131114
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230322",
+          "delta": 1.200399798189824
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230340",
+          "delta": 0.7071616812928085
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230343",
+          "delta": 0.9193710058402638
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230362",
+          "delta": 0.8130957795682487
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230372",
+          "delta": 0.8171045112983122
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230378",
+          "delta": 0.6652957445954624
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230382",
+          "delta": 0.8875359761038406
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230387",
+          "delta": 1.166910488778131
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230400",
+          "delta": 0.36796387674290587
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230424",
+          "delta": 0.7926023001773479
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230427",
+          "delta": 0.9864325178112772
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230446",
+          "delta": 1.0285424756910468
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230449",
+          "delta": 0.8224175559564579
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230457",
+          "delta": 0.6348325128424657
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230462",
+          "delta": 0.9286923044581705
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230468",
+          "delta": 0.7573301908787915
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230481",
+          "delta": 1.0713344506788163
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230482",
+          "delta": 0.9087955601761251
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230488",
+          "delta": 0.9580477063203277
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230504",
+          "delta": 0.8346267371728229
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230511",
+          "delta": 0.9183249277611303
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230515",
+          "delta": 0.6915142260885521
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230525",
+          "delta": 1.046390302027275
+        }
+      ],
+      "GSM_truncated": 32,
+      "GSM_parse_failures": 30,
+      "GSM_natural_total_wall_seconds": 397.1423083659756,
+      "GSM_output_tokens": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "logical_consumers": [
+        "StageF-k9-s11"
+      ]
+    },
+    "b487b06b242752c5d539b6d51219ac7de087f7c2348208ad3aaf81b5ca17054c": {
+      "bundle_bytes": 11047747195,
+      "C4_mean_NLL": 3.3178713998216005,
+      "C4_signed_delta_mean": 0.8586327521068475,
+      "C4_positive_delta_mean": 0.8586327521068475,
+      "C4_positive_delta_CVaR90": 1.3101297964555174,
+      "C4_paired_document_delta": [
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230004",
+          "delta": 0.852866335157779
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230006",
+          "delta": 0.8233236473367174
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230008",
+          "delta": 0.6163549852464532
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230015",
+          "delta": 0.787744331733121
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230022",
+          "delta": 0.5734103626467713
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230026",
+          "delta": 0.9406166151311768
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230028",
+          "delta": 0.8003178128057731
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230032",
+          "delta": 0.6825407442514675
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230036",
+          "delta": 0.9838535137139188
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230045",
+          "delta": 0.942215831778987
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230050",
+          "delta": 0.7844892826565557
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230064",
+          "delta": 0.8606606798862524
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230065",
+          "delta": 0.9276366709729698
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230074",
+          "delta": 1.110278941413894
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230091",
+          "delta": 1.0867169822498775
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230092",
+          "delta": 0.7706088609191535
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230124",
+          "delta": 0.8048556751467708
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230136",
+          "delta": 0.7118713020578524
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230140",
+          "delta": 0.8277234340600539
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230145",
+          "delta": 1.00672246705296
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230153",
+          "delta": 0.7491292636221867
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230163",
+          "delta": 1.0576905252415605
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230164",
+          "delta": 0.7826536891511742
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230165",
+          "delta": 0.6444612566505628
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230184",
+          "delta": 0.6780308314732144
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230205",
+          "delta": 2.1850970542594177
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230220",
+          "delta": 1.2552934560757092
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230227",
+          "delta": 0.7710553372676126
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230233",
+          "delta": 0.8988335715814579
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230240",
+          "delta": 1.0182080651449366
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230249",
+          "delta": 0.5050506293190433
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230258",
+          "delta": 0.5847504796813845
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230260",
+          "delta": 0.6331763220859834
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230261",
+          "delta": 0.7221775241560664
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230267",
+          "delta": 0.8330692059839775
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230269",
+          "delta": 1.0353509413986055
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230274",
+          "delta": 0.796252704179917
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230303",
+          "delta": 0.6332076160408513
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230307",
+          "delta": 0.6855663441398605
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230308",
+          "delta": 0.9793513647030945
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230317",
+          "delta": 0.78271341043909
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230322",
+          "delta": 1.195653389111424
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230340",
+          "delta": 0.7315740715967465
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230343",
+          "delta": 0.9473693011558217
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230362",
+          "delta": 0.823082612218689
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230372",
+          "delta": 0.7491474188937133
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230378",
+          "delta": 0.5805930419444105
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230382",
+          "delta": 0.831993028375734
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230387",
+          "delta": 1.128714664108366
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230400",
+          "delta": 0.4654906509907044
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230424",
+          "delta": 0.8175122882522015
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230427",
+          "delta": 0.9813139256665853
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230446",
+          "delta": 1.025154845355308
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230449",
+          "delta": 0.7387258152672453
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230457",
+          "delta": 0.6300791760946676
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230462",
+          "delta": 0.9392978496514184
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230468",
+          "delta": 0.8597775214805528
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230481",
+          "delta": 1.0031652282595402
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230482",
+          "delta": 0.8546209465967465
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230488",
+          "delta": 0.9787745765044029
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230504",
+          "delta": 0.833389073202055
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230511",
+          "delta": 0.9277532469269816
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230515",
+          "delta": 0.7257674902152642
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230525",
+          "delta": 1.057617904155455
+        }
+      ],
+      "GSM_truncated": 32,
+      "GSM_parse_failures": 32,
+      "GSM_natural_total_wall_seconds": 391.65429213794414,
+      "GSM_output_tokens": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "logical_consumers": [
+        "StageF-k9-s37"
+      ]
+    },
+    "b828eb5a3aede94d43b9fa1983f2f51c48f7219558fefa81309bb6553144f008": {
+      "bundle_bytes": 12446101099,
+      "C4_mean_NLL": 2.9719180276949113,
+      "C4_signed_delta_mean": 0.5126793799801582,
+      "C4_positive_delta_mean": 0.5126793799801582,
+      "C4_positive_delta_CVaR90": 0.8324859454907083,
+      "C4_paired_document_delta": [
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230004",
+          "delta": 0.48925637918909004
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230006",
+          "delta": 0.5561702601363749
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230008",
+          "delta": 0.3015817541432244
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230015",
+          "delta": 0.5341787319593934
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230022",
+          "delta": 0.40820885824363984
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230026",
+          "delta": 0.5635930190114358
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230028",
+          "delta": 0.5301673724926617
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230032",
+          "delta": 0.3782299661356405
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230036",
+          "delta": 0.6290839805528377
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230045",
+          "delta": 0.5146405542899952
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230050",
+          "delta": 0.4303957944746819
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230064",
+          "delta": 0.5165991736484834
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230065",
+          "delta": 0.5346010809075343
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230074",
+          "delta": 0.6335931766756357
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230091",
+          "delta": 0.5740047089041096
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230092",
+          "delta": 0.44871995780332696
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230124",
+          "delta": 0.47085911700403615
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230136",
+          "delta": 0.38302080785225057
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230140",
+          "delta": 0.44692091372614984
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230145",
+          "delta": 0.6445381776693984
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230153",
+          "delta": 0.426526332788038
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230163",
+          "delta": 0.6331607945511251
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230164",
+          "delta": 0.49855665591364984
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230165",
+          "delta": 0.360816671890289
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230184",
+          "delta": 0.39690433509662437
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230205",
+          "delta": 1.651004559839775
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230220",
+          "delta": 0.7486971203828277
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230227",
+          "delta": 0.5045175571031066
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230233",
+          "delta": 0.44669397283206935
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230240",
+          "delta": 0.5817335991010277
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230249",
+          "delta": 0.3361031668526784
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230258",
+          "delta": 0.3781215122767856
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230260",
+          "delta": 0.37072610575159004
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230261",
+          "delta": 0.4783226057974561
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230267",
+          "delta": 0.4327636240979693
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230269",
+          "delta": 0.6394496850538158
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230274",
+          "delta": 0.49591076397382583
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230303",
+          "delta": 0.44945787403681514
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230307",
+          "delta": 0.39992037957895055
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230308",
+          "delta": 0.48983818397596646
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230317",
+          "delta": 0.3842548885457435
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230322",
+          "delta": 0.7093794910408513
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230340",
+          "delta": 0.4766444376070207
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230343",
+          "delta": 0.5730064078553081
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230362",
+          "delta": 0.522162808830724
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230372",
+          "delta": 0.43852075625305753
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230378",
+          "delta": 0.4354617124434321
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230382",
+          "delta": 0.48347870291095907
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230387",
+          "delta": 0.6424634601272015
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230400",
+          "delta": 0.266952723672945
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230424",
+          "delta": 0.49700199134662393
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230427",
+          "delta": 0.6346215772535468
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230446",
+          "delta": 0.6760473680589532
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230449",
+          "delta": 0.4723808154201321
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230457",
+          "delta": 0.3268801694746819
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230462",
+          "delta": 0.6081609856592465
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230468",
+          "delta": 0.522040738518224
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230481",
+          "delta": 0.49337714805528377
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230482",
+          "delta": 0.49451185252568486
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230488",
+          "delta": 0.5396112191933709
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230504",
+          "delta": 0.5206509047058465
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230511",
+          "delta": 0.4170741251070207
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230515",
+          "delta": 0.4449708942331214
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230525",
+          "delta": 0.524235854176859
+        }
+      ],
+      "GSM_truncated": 32,
+      "GSM_parse_failures": 12,
+      "GSM_natural_total_wall_seconds": 439.6225594280113,
+      "GSM_output_tokens": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "logical_consumers": [
+        "StageF-k6-s11",
+        "StageF-k6-s37"
+      ]
+    },
+    "fca8e3e34ff7940fff192c455f6a593aab7e80e3c0ca09bdf0bcde9858b2a0a7": {
+      "bundle_bytes": 13844455003,
+      "C4_mean_NLL": 2.60976738752451,
+      "C4_signed_delta_mean": 0.15052873980975662,
+      "C4_positive_delta_mean": 0.15052873980975662,
+      "C4_positive_delta_CVaR90": 0.3557404296038901,
+      "C4_paired_document_delta": [
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230004",
+          "delta": 0.18069463979941291
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230006",
+          "delta": 0.17508585532350818
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230008",
+          "delta": 0.06385185107326352
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230015",
+          "delta": 0.14295890793175126
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230022",
+          "delta": 0.1025596066230432
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230026",
+          "delta": 0.17198094556476273
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230028",
+          "delta": 0.13721634777091518
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230032",
+          "delta": 0.12604583919398227
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230036",
+          "delta": 0.12822160515533287
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230045",
+          "delta": 0.13577610919153615
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230050",
+          "delta": 0.1460273877048679
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230064",
+          "delta": 0.1673763148238745
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230065",
+          "delta": 0.15701992684381105
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230074",
+          "delta": 0.20018026273544498
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230091",
+          "delta": 0.14749963689456935
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230092",
+          "delta": 0.054476325525929514
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230124",
+          "delta": 0.11191052699975534
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230136",
+          "delta": 0.1294427860506362
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230140",
+          "delta": 0.13170765617355684
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230145",
+          "delta": 0.17942448744801864
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230153",
+          "delta": 0.12757995963796454
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230163",
+          "delta": 0.1982925922670007
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230164",
+          "delta": 0.153524798189824
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230165",
+          "delta": 0.1394984176247558
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230184",
+          "delta": 0.15177950327177125
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230205",
+          "delta": 1.1223111087328768
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230220",
+          "delta": 0.22323984642551364
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230227",
+          "delta": 0.08952077727495089
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230233",
+          "delta": 0.18367067101883539
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230240",
+          "delta": 0.09094787717098862
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230249",
+          "delta": 0.07694741564487506
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230258",
+          "delta": 0.10561327551675603
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230260",
+          "delta": 0.0717472442208904
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230261",
+          "delta": 0.10381375366927603
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230267",
+          "delta": 0.1158447265625
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230269",
+          "delta": 0.14304490658635016
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230274",
+          "delta": 0.14688331320327785
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230303",
+          "delta": 0.08843384983488267
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230307",
+          "delta": 0.11205373864817769
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230308",
+          "delta": 0.13408444399003172
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230317",
+          "delta": 0.06998713842343474
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230322",
+          "delta": 0.14142144309564575
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230340",
+          "delta": 0.12624554718077308
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230343",
+          "delta": 0.140569578644814
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230362",
+          "delta": 0.15637899798189814
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230372",
+          "delta": 0.06522185741805275
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230378",
+          "delta": 0.07545295013606901
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230382",
+          "delta": 0.12599232892001
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230387",
+          "delta": 0.20933744725415848
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230400",
+          "delta": 0.12078941031678081
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230424",
+          "delta": 0.07891021549351729
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230427",
+          "delta": 0.2454449379280823
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230446",
+          "delta": 0.1948313853045498
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230449",
+          "delta": 0.15774279331274466
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230457",
+          "delta": 0.09894790201504389
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230462",
+          "delta": 0.1607978955173679
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230468",
+          "delta": 0.16179380771465235
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230481",
+          "delta": 0.1265713865276421
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230482",
+          "delta": 0.11922184595156526
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230488",
+          "delta": 0.18045933792502433
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230504",
+          "delta": 0.13101488923373283
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230511",
+          "delta": 0.11152568302042543
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230515",
+          "delta": 0.10994211335004911
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230525",
+          "delta": 0.15694921683891883
+        }
+      ],
+      "GSM_truncated": 2,
+      "GSM_parse_failures": 25,
+      "GSM_natural_total_wall_seconds": 228.18845405797765,
+      "GSM_output_tokens": [
+        192,
+        217,
+        278,
+        217,
+        209,
+        289,
+        103,
+        265,
+        341,
+        238,
+        331,
+        380,
+        205,
+        121,
+        299,
+        227,
+        141,
+        216,
+        512,
+        225,
+        347,
+        512,
+        179,
+        148,
+        346,
+        119,
+        129,
+        180,
+        171,
+        206,
+        239,
+        237
+      ],
+      "logical_consumers": [
+        "StageF-k3-s37"
+      ]
+    },
+    "0b8c7209ee7a5a813cfdf611e585fe7855ffa15b38da31d7cfd6d71657586a7f": {
+      "bundle_bytes": 12446105399,
+      "C4_mean_NLL": 3.0605509995014466,
+      "C4_signed_delta_mean": 0.6013123517866937,
+      "C4_positive_delta_mean": 0.6013123517866937,
+      "C4_positive_delta_CVaR90": 0.9472726123906863,
+      "C4_paired_document_delta": [
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230004",
+          "delta": 0.6879792036142369
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230006",
+          "delta": 0.6370109065404845
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230008",
+          "delta": 0.479957296890289
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230015",
+          "delta": 0.5294371005840262
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230022",
+          "delta": 0.4113258317025439
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230026",
+          "delta": 0.6996620013989114
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230028",
+          "delta": 0.6817880171385764
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230032",
+          "delta": 0.5160545155026908
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230036",
+          "delta": 0.7242926132888945
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230045",
+          "delta": 0.6429156697193004
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230050",
+          "delta": 0.4368987260732631
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230064",
+          "delta": 0.5358748165362033
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230065",
+          "delta": 0.7010739320878181
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230074",
+          "delta": 0.8487422218994616
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230091",
+          "delta": 0.7199539811643834
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230092",
+          "delta": 0.5973105831855432
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230124",
+          "delta": 0.5706963884387228
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230136",
+          "delta": 0.5104204092007092
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230140",
+          "delta": 0.6206630400715509
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230145",
+          "delta": 0.6366633286448142
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230153",
+          "delta": 0.5821057821673188
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230163",
+          "delta": 0.6457259146434686
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230164",
+          "delta": 0.5964140472113502
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230165",
+          "delta": 0.4410383668664384
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230184",
+          "delta": 0.5048579684442269
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230205",
+          "delta": 1.657602567728718
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230220",
+          "delta": 0.9494671905577299
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230227",
+          "delta": 0.5950820236056749
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230233",
+          "delta": 0.5650780485567513
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230240",
+          "delta": 0.6692443967098827
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230249",
+          "delta": 0.3704813679137109
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230258",
+          "delta": 0.4222572162426612
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230260",
+          "delta": 0.36402298839591474
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230261",
+          "delta": 0.5750682255993151
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230267",
+          "delta": 0.47471782885885494
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230269",
+          "delta": 0.7046911310543051
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230274",
+          "delta": 0.6459679053021037
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230303",
+          "delta": 0.5133837795070941
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230307",
+          "delta": 0.4544640707176495
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230308",
+          "delta": 0.5560979973779967
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230317",
+          "delta": 0.453640991927593
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230322",
+          "delta": 0.8136956201840757
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230340",
+          "delta": 0.4974811949608613
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230343",
+          "delta": 0.7473959129617174
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230362",
+          "delta": 0.6774945343077299
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230372",
+          "delta": 0.4852603083720646
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230378",
+          "delta": 0.4866118011176004
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230382",
+          "delta": 0.5267193042135521
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230387",
+          "delta": 0.6822851371391878
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230400",
+          "delta": 0.3046736446612037
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230424",
+          "delta": 0.5752980331152151
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230427",
+          "delta": 0.7464558998899218
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230446",
+          "delta": 0.6827187136894568
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230449",
+          "delta": 0.5975157855308217
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230457",
+          "delta": 0.44438562561154615
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230462",
+          "delta": 0.49589929748654615
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230468",
+          "delta": 0.6936739867447406
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230481",
+          "delta": 0.6476663787304306
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230482",
+          "delta": 0.6958633691597358
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230488",
+          "delta": 0.5501075938723092
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230504",
+          "delta": 0.483182724208048
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230511",
+          "delta": 0.48372475461717235
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230515",
+          "delta": 0.488691654690558
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230525",
+          "delta": 0.7470588460127203
+        }
+      ],
+      "GSM_truncated": 32,
+      "GSM_parse_failures": 11,
+      "GSM_natural_total_wall_seconds": 439.2605797400174,
+      "GSM_output_tokens": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "logical_consumers": [
+        "StageH-branches-s37"
+      ]
+    },
+    "30d49d768ed448a39ad25aa70df5868230a36ca0d4dea79d70ddd26dc704b6e3": {
+      "bundle_bytes": 12446105351,
+      "C4_mean_NLL": 3.6053523942682375,
+      "C4_signed_delta_mean": 1.1461137465534843,
+      "C4_positive_delta_mean": 1.1461137465534843,
+      "C4_positive_delta_CVaR90": 1.9276163209441122,
+      "C4_paired_document_delta": [
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230004",
+          "delta": 1.155721347159369
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230006",
+          "delta": 1.0596087730094181
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230008",
+          "delta": 0.9968608102219916
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230015",
+          "delta": 1.1877224020761985
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230022",
+          "delta": 0.6775848328950587
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230026",
+          "delta": 1.2652952190481288
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230028",
+          "delta": 1.3435445587695694
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230032",
+          "delta": 1.1172481768285225
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230036",
+          "delta": 1.149986909093689
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230045",
+          "delta": 1.1537185340478229
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230050",
+          "delta": 1.059594917670621
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230064",
+          "delta": 1.0366686318951808
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230065",
+          "delta": 1.065446170575465
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230074",
+          "delta": 1.4090917777641878
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230091",
+          "delta": 1.4470563616071423
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230092",
+          "delta": 1.0086861029996332
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230124",
+          "delta": 1.0058383531066535
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230136",
+          "delta": 1.0596677776418786
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230140",
+          "delta": 1.1086010121086107
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230145",
+          "delta": 0.9616586942728718
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230153",
+          "delta": 1.1337006749938845
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230163",
+          "delta": 1.0993394347786203
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230164",
+          "delta": 1.0641143858549413
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230165",
+          "delta": 0.6917411669826321
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230184",
+          "delta": 0.6989531097113502
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230205",
+          "delta": 2.491908482142857
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230220",
+          "delta": 1.9332425888270546
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230227",
+          "delta": 1.1112249266144811
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230233",
+          "delta": 1.133093428938356
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230240",
+          "delta": 1.8970118334148727
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230249",
+          "delta": 0.6041514178311522
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230258",
+          "delta": 0.8175469265991926
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230260",
+          "delta": 0.5837256623807487
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230261",
+          "delta": 1.0537563256788163
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230267",
+          "delta": 0.9002336774553568
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230269",
+          "delta": 1.323779201320939
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230274",
+          "delta": 1.1312418301278133
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230303",
+          "delta": 0.8398363445602985
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230307",
+          "delta": 1.1987504156601638
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230308",
+          "delta": 1.3036909905898362
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230317",
+          "delta": 0.9175086571978968
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230322",
+          "delta": 2.1222411153834395
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230340",
+          "delta": 0.9546029824333417
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230343",
+          "delta": 1.2518972258745111
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230362",
+          "delta": 1.2006721272627203
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230372",
+          "delta": 1.2409949853228963
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230378",
+          "delta": 0.8176031840524096
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230382",
+          "delta": 1.277979662273728
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230387",
+          "delta": 1.7765506512964775
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230400",
+          "delta": 0.7957751727617413
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230424",
+          "delta": 1.0118592144691778
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230427",
+          "delta": 1.4216590478228963
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230446",
+          "delta": 0.9450043381543543
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230449",
+          "delta": 0.8367327486698874
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230457",
+          "delta": 0.8723567357968443
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230462",
+          "delta": 1.1441055566597358
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230468",
+          "delta": 1.1491957214713793
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230481",
+          "delta": 1.2529454539200096
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230482",
+          "delta": 1.1289358717588063
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230488",
+          "delta": 1.0673756459454498
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230504",
+          "delta": 0.8404686735567517
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230511",
+          "delta": 1.254923184090631
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230515",
+          "delta": 1.252280397657779
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230525",
+          "delta": 1.5369672383347601
+        }
+      ],
+      "GSM_truncated": 32,
+      "GSM_parse_failures": 31,
+      "GSM_natural_total_wall_seconds": 444.5185889649729,
+      "GSM_output_tokens": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "logical_consumers": [
+        "StageH-branches-s11"
+      ]
+    },
+    "fc740272fb3815fe0c5398aab65341102fe8fc7b27d7c22e5c3d1770a0673407": {
+      "bundle_bytes": 12446105360,
+      "C4_mean_NLL": 3.468265432667592,
+      "C4_signed_delta_mean": 1.0090267849528392,
+      "C4_positive_delta_mean": 1.0090267849528392,
+      "C4_positive_delta_CVaR90": 1.6232244562496174,
+      "C4_paired_document_delta": [
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230004",
+          "delta": 1.100981292426003
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230006",
+          "delta": 1.0637039811643838
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230008",
+          "delta": 0.8920489943890657
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230015",
+          "delta": 0.8755981684197649
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230022",
+          "delta": 0.7351962871514188
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230026",
+          "delta": 1.0976265087986181
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230028",
+          "delta": 1.106092718016145
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230032",
+          "delta": 0.8114030393835616
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230036",
+          "delta": 1.1257964430956457
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230045",
+          "delta": 1.122384685359589
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230050",
+          "delta": 0.8853862486240214
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230064",
+          "delta": 0.8962285290025682
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230065",
+          "delta": 0.994291839301003
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230074",
+          "delta": 1.4223260151663406
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230091",
+          "delta": 2.254222056170499
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230092",
+          "delta": 1.0085196000489236
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230124",
+          "delta": 1.0407987172822897
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230136",
+          "delta": 1.0521569895884295
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230140",
+          "delta": 1.0199672154017856
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230145",
+          "delta": 0.9994632250642124
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230153",
+          "delta": 0.9350550104727251
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230163",
+          "delta": 0.8830853068431996
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230164",
+          "delta": 0.9878751452421723
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230165",
+          "delta": 0.7848968207252938
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230184",
+          "delta": 0.672740719789628
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230205",
+          "delta": 2.003001353045499
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230220",
+          "delta": 1.5048051748257092
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230227",
+          "delta": 0.9974725950954011
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230233",
+          "delta": 1.0407929840386494
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230240",
+          "delta": 1.2538565618884543
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230249",
+          "delta": 0.6719938453629526
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230258",
+          "delta": 0.8440662839408022
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230260",
+          "delta": 0.5013657064120598
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230261",
+          "delta": 0.8323446673189823
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230267",
+          "delta": 0.9093485793022258
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230269",
+          "delta": 1.2339710452085368
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230274",
+          "delta": 0.9331551568615462
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230303",
+          "delta": 0.8750456270639679
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230307",
+          "delta": 0.8389074396480554
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230308",
+          "delta": 1.0632583409139553
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230317",
+          "delta": 0.8961289138943247
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230322",
+          "delta": 1.3619341766297701
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230340",
+          "delta": 0.8100528605063602
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230343",
+          "delta": 1.2224761305956462
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230362",
+          "delta": 1.0299411482540362
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230372",
+          "delta": 0.9789033356011498
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230378",
+          "delta": 0.6679050871070817
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230382",
+          "delta": 0.9005869885946671
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230387",
+          "delta": 1.2808317120994372
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230400",
+          "delta": 0.38054117997798453
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230424",
+          "delta": 1.0696137609313845
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230427",
+          "delta": 1.1131154637047458
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230446",
+          "delta": 1.330015059319961
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230449",
+          "delta": 0.8015081775165118
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230457",
+          "delta": 0.847330410653131
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230462",
+          "delta": 0.8504798724926612
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230468",
+          "delta": 0.8656650849284491
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230481",
+          "delta": 1.0835242821978963
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230482",
+          "delta": 0.9099713528926126
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230488",
+          "delta": 0.9335741614175634
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230504",
+          "delta": 0.8424805643040609
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230511",
+          "delta": 0.8887710123379402
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230515",
+          "delta": 0.9983395093107879
+        },
+        {
+          "id": "allenai/c4@1588ec454efa1a09f29cd18ddd04fe05fc8653a2:en/c4-train.00000-of-01024.json.gz:230525",
+          "delta": 1.2427930738594668
+        }
+      ],
+      "GSM_truncated": 32,
+      "GSM_parse_failures": 6,
+      "GSM_natural_total_wall_seconds": 442.8603020270093,
+      "GSM_output_tokens": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "logical_consumers": [
+        "StageH-branches-s23"
+      ]
+    }
+  },
+  "family": {
+    "size": 9,
+    "alpha": 0.05,
+    "raw_p": [
+      0.01893962120757585,
+      1.999960000799984e-05,
+      0.01587968240635187,
+      0.0372992540149197,
+      1.999960000799984e-05,
+      1.0,
+      0.17953640927181455,
+      0.0001399972000559989,
+      1.0
+    ],
+    "Holm_adjusted_p": [
+      0.09527809443811122,
+      0.00017999640007199856,
+      0.09527809443811122,
+      0.1491970160596788,
+      0.00017999640007199856,
+      1.0,
+      0.5386092278154436,
+      0.0009799804003919922,
+      1.0
+    ],
+    "old_families_unchanged": true
+  },
+  "replicates": 50000,
+  "seed": 20261021,
+  "inference_scope": "Conditional fixed3seed mean paired question clusters, not independent physical replicates; same-source holdout,17historicalgap/pretrainingunknown; noARC; no screening; not equivalence/fullspace",
+  "GPU_hours_charge": 0,
+  "wall_seconds": 0.7387651419994654
+}

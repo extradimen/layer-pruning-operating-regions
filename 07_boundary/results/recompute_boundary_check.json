@@ -1,0 +1,23 @@
+{
+  "status": "PASS_RELEASED_BOUNDARY_ROWS_MATCH_FROZEN",
+  "quality": [
+    {
+      "model": "qwen",
+      "contrasts": 9,
+      "checked_values": 90
+    },
+    {
+      "model": "mistral",
+      "contrasts": 9,
+      "checked_values": 90
+    }
+  ],
+  "length": {
+    "length_cells": 12,
+    "checked_values": 72
+  },
+  "mistral_serving": {
+    "serving_cells": 20,
+    "checked_values": 260
+  }
+}

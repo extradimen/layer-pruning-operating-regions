@@ -1,0 +1,5 @@
+method,source,url,scope
+interaction_tabu,Project frozen search; CBO attribution,https://arxiv.org/abs/2602.00161v3,Project implementation; local source hashes in manifest
+shortgpt_bi_adapted,"ShortGPT, Findings of ACL 2025",https://aclanthology.org/2025.findings-acl.1035/,BI static ranking; controlled calibration/domain adaptation; adapter commit pending
+sleb_iterative_adapted,"SLEB, ICML 2024",https://proceedings.mlr.press/v235/song24f.html,Iterative elimination; controlled NLL aggregation/domain adaptation; official code commit pending
+random,Project reference,,Proposed deterministic hash permutation; not equal-compute search
